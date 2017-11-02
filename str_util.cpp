@@ -74,8 +74,24 @@ vector<string> split(const char *src){
     return retVector;
 }
 
+string& trim(std::string &s)   
+{  
+    if (s.empty())   
+    {  
+        return s;  
+    }  
+  
+    s.erase(0,s.find_first_not_of(" "));  
+    s.erase(s.find_last_not_of(" ") + 1);  
+    return s;  
+}
 
 int main(int argc, const char * argv[]) {
+	string str1 = "     ";
+	trim(str1);
+	cout << str1 << endl;
+	return 0;
+	
     // insert code here...
     string src="最后一集燃爆了啊！！期待第二季不要瞎扯";
     vector<string> vectorSrc = split(src.c_str());
