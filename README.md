@@ -8,3 +8,6 @@ python reg.py
 
 # mysql操作
 gcc mysqlTest.cpp -I /home/work/.jumbo/include/ -L /home/work/.jumbo/lib -lmysqlclient -o mysqlTest
+
+#curl 编译
+g++ -Wall -g curlTest.cpp  -lcurl -o curlTest
