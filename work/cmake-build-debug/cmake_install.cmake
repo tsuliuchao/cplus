@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zhoubaochuan/Workspace/Cplus/work
+# Install script for directory: /Users/zhoubaochuan/Workspace/Cplus/cplus/work
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zhoubaochuan/Workspace/Cplus/work/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

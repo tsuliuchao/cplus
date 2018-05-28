@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/zhoubaochuan/Workspace/Cplus/work/include 
+CXX_INCLUDES = -I/Users/zhoubaochuan/Workspace/Cplus/cplus/work/include 
 
