@@ -12,5 +12,4 @@ set(WORK ${dir_srcs})
 
 add_executable(work ${WORK})
 
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} m)
 
