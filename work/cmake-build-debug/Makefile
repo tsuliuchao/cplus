@@ -123,59 +123,59 @@ work/fast:
 	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/build
 .PHONY : work/fast
 
-src/main.o: src/main.cpp.o
+src/main/main.o: src/main/main.cpp.o
 
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/string_util.o: src/string_util.cpp.o
-
-.PHONY : src/string_util.o
+.PHONY : src/main/main.o
 
 # target to build an object file
-src/string_util.cpp.o:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/string_util.cpp.o
-.PHONY : src/string_util.cpp.o
+src/main/main.cpp.o:
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/main.cpp.o
+.PHONY : src/main/main.cpp.o
 
-src/string_util.i: src/string_util.cpp.i
+src/main/main.i: src/main/main.cpp.i
 
-.PHONY : src/string_util.i
+.PHONY : src/main/main.i
 
 # target to preprocess a source file
-src/string_util.cpp.i:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/string_util.cpp.i
-.PHONY : src/string_util.cpp.i
+src/main/main.cpp.i:
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/main.cpp.i
+.PHONY : src/main/main.cpp.i
 
-src/string_util.s: src/string_util.cpp.s
+src/main/main.s: src/main/main.cpp.s
 
-.PHONY : src/string_util.s
+.PHONY : src/main/main.s
 
 # target to generate assembly for a file
-src/string_util.cpp.s:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/string_util.cpp.s
-.PHONY : src/string_util.cpp.s
+src/main/main.cpp.s:
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/main.cpp.s
+.PHONY : src/main/main.cpp.s
+
+src/main/string_util.o: src/main/string_util.cpp.o
+
+.PHONY : src/main/string_util.o
+
+# target to build an object file
+src/main/string_util.cpp.o:
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.o
+.PHONY : src/main/string_util.cpp.o
+
+src/main/string_util.i: src/main/string_util.cpp.i
+
+.PHONY : src/main/string_util.i
+
+# target to preprocess a source file
+src/main/string_util.cpp.i:
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.i
+.PHONY : src/main/string_util.cpp.i
+
+src/main/string_util.s: src/main/string_util.cpp.s
+
+.PHONY : src/main/string_util.s
+
+# target to generate assembly for a file
+src/main/string_util.cpp.s:
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.s
+.PHONY : src/main/string_util.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... work"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/string_util.o"
-	@echo "... src/string_util.i"
-	@echo "... src/string_util.s"
+	@echo "... src/main/main.o"
+	@echo "... src/main/main.i"
+	@echo "... src/main/main.s"
+	@echo "... src/main/string_util.o"
+	@echo "... src/main/string_util.i"
+	@echo "... src/main/string_util.s"
 .PHONY : help
 
 

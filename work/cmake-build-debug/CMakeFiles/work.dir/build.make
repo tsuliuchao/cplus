@@ -57,64 +57,64 @@ include CMakeFiles/work.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/work.dir/flags.make
 
-CMakeFiles/work.dir/src/main.cpp.o: CMakeFiles/work.dir/flags.make
-CMakeFiles/work.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/work.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/work.dir/src/main.cpp.o -c /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main.cpp
+CMakeFiles/work.dir/src/main/main.cpp.o: CMakeFiles/work.dir/flags.make
+CMakeFiles/work.dir/src/main/main.cpp.o: ../src/main/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/work.dir/src/main/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/work.dir/src/main/main.cpp.o -c /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/main.cpp
 
-CMakeFiles/work.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/work.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main.cpp > CMakeFiles/work.dir/src/main.cpp.i
+CMakeFiles/work.dir/src/main/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/work.dir/src/main/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/main.cpp > CMakeFiles/work.dir/src/main/main.cpp.i
 
-CMakeFiles/work.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/work.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main.cpp -o CMakeFiles/work.dir/src/main.cpp.s
+CMakeFiles/work.dir/src/main/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/work.dir/src/main/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/main.cpp -o CMakeFiles/work.dir/src/main/main.cpp.s
 
-CMakeFiles/work.dir/src/main.cpp.o.requires:
+CMakeFiles/work.dir/src/main/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/work.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/work.dir/src/main/main.cpp.o.requires
 
-CMakeFiles/work.dir/src/main.cpp.o.provides: CMakeFiles/work.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/work.dir/src/main.cpp.o.provides
+CMakeFiles/work.dir/src/main/main.cpp.o.provides: CMakeFiles/work.dir/src/main/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/main.cpp.o.provides.build
+.PHONY : CMakeFiles/work.dir/src/main/main.cpp.o.provides
 
-CMakeFiles/work.dir/src/main.cpp.o.provides.build: CMakeFiles/work.dir/src/main.cpp.o
+CMakeFiles/work.dir/src/main/main.cpp.o.provides.build: CMakeFiles/work.dir/src/main/main.cpp.o
 
 
-CMakeFiles/work.dir/src/string_util.cpp.o: CMakeFiles/work.dir/flags.make
-CMakeFiles/work.dir/src/string_util.cpp.o: ../src/string_util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/work.dir/src/string_util.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/work.dir/src/string_util.cpp.o -c /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/string_util.cpp
+CMakeFiles/work.dir/src/main/string_util.cpp.o: CMakeFiles/work.dir/flags.make
+CMakeFiles/work.dir/src/main/string_util.cpp.o: ../src/main/string_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/work.dir/src/main/string_util.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/work.dir/src/main/string_util.cpp.o -c /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/string_util.cpp
 
-CMakeFiles/work.dir/src/string_util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/work.dir/src/string_util.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/string_util.cpp > CMakeFiles/work.dir/src/string_util.cpp.i
+CMakeFiles/work.dir/src/main/string_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/work.dir/src/main/string_util.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/string_util.cpp > CMakeFiles/work.dir/src/main/string_util.cpp.i
 
-CMakeFiles/work.dir/src/string_util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/work.dir/src/string_util.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/string_util.cpp -o CMakeFiles/work.dir/src/string_util.cpp.s
+CMakeFiles/work.dir/src/main/string_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/work.dir/src/main/string_util.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/string_util.cpp -o CMakeFiles/work.dir/src/main/string_util.cpp.s
 
-CMakeFiles/work.dir/src/string_util.cpp.o.requires:
+CMakeFiles/work.dir/src/main/string_util.cpp.o.requires:
 
-.PHONY : CMakeFiles/work.dir/src/string_util.cpp.o.requires
+.PHONY : CMakeFiles/work.dir/src/main/string_util.cpp.o.requires
 
-CMakeFiles/work.dir/src/string_util.cpp.o.provides: CMakeFiles/work.dir/src/string_util.cpp.o.requires
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/string_util.cpp.o.provides.build
-.PHONY : CMakeFiles/work.dir/src/string_util.cpp.o.provides
+CMakeFiles/work.dir/src/main/string_util.cpp.o.provides: CMakeFiles/work.dir/src/main/string_util.cpp.o.requires
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.o.provides.build
+.PHONY : CMakeFiles/work.dir/src/main/string_util.cpp.o.provides
 
-CMakeFiles/work.dir/src/string_util.cpp.o.provides.build: CMakeFiles/work.dir/src/string_util.cpp.o
+CMakeFiles/work.dir/src/main/string_util.cpp.o.provides.build: CMakeFiles/work.dir/src/main/string_util.cpp.o
 
 
 # Object files for target work
 work_OBJECTS = \
-"CMakeFiles/work.dir/src/main.cpp.o" \
-"CMakeFiles/work.dir/src/string_util.cpp.o"
+"CMakeFiles/work.dir/src/main/main.cpp.o" \
+"CMakeFiles/work.dir/src/main/string_util.cpp.o"
 
 # External object files for target work
 work_EXTERNAL_OBJECTS =
 
-work: CMakeFiles/work.dir/src/main.cpp.o
-work: CMakeFiles/work.dir/src/string_util.cpp.o
+work: CMakeFiles/work.dir/src/main/main.cpp.o
+work: CMakeFiles/work.dir/src/main/string_util.cpp.o
 work: CMakeFiles/work.dir/build.make
 work: CMakeFiles/work.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable work"
@@ -125,8 +125,8 @@ CMakeFiles/work.dir/build: work
 
 .PHONY : CMakeFiles/work.dir/build
 
-CMakeFiles/work.dir/requires: CMakeFiles/work.dir/src/main.cpp.o.requires
-CMakeFiles/work.dir/requires: CMakeFiles/work.dir/src/string_util.cpp.o.requires
+CMakeFiles/work.dir/requires: CMakeFiles/work.dir/src/main/main.cpp.o.requires
+CMakeFiles/work.dir/requires: CMakeFiles/work.dir/src/main/string_util.cpp.o.requires
 
 .PHONY : CMakeFiles/work.dir/requires
 
