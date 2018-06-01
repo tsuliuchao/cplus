@@ -35,7 +35,8 @@ import datetime
 import errno
 import os
 import re
-from xml.dom import minidom
+import sys
+from xml.dom import minidom, Node
 
 import gtest_test_utils
 import gtest_xml_test_utils
