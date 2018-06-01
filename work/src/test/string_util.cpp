@@ -2,7 +2,6 @@
 // Created by Zhou,Baochuan on 18/5/31.
 //
 
-#include "gtest/gtest.h"
 #include "common.h"
 #include "string_util.h"
 using namespace work;

@@ -10,3 +10,6 @@ src     :   源代码 <br/>
  &ensp;|—main ： 实现代码<br/>
  &ensp;|—test ： 单元测试代码<br/>
  
+ ## 单元测试
+ 目录位置： src/test/添加单元测试代码
+ 代码样例参考: src/test/string_util.cpp

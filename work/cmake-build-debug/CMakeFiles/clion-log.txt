@@ -1,8 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zhoubaochuan/Workspace/Cplus/cplus/work
------------- Options -------------
-  CMAKE_BUILD_TYPE: Debug
-  CMAKE_BUILD_TYPE: Hello World!
- project_source_dir:/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/zhoubaochuan/Workspace/Cplus/cplus/work/cmake-build-debug
