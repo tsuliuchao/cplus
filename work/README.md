@@ -7,7 +7,8 @@ lib     :   库 <br/>
 
 src     :   源代码 <br/>
  &ensp;|—include  ： 存放头文件 <br/>
- &ensp;|—main ： 实现代码<br/>
+ &ensp;|—utility：实现代码,对应include<br/>
+ &ensp;|—main ：执行代码 <br/>
  &ensp;|—test ： 单元测试代码<br/>
  
  ## 单元测试
