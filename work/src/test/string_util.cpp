@@ -4,9 +4,10 @@
 
 #include "common.h"
 #include "string_util.h"
+#include <gtest/gtest.h>
+
 using namespace work;
 
-#ifdef ENV_DEBUG
 TEST(string_util, trim)
 {
     string src1 = " 空格校验 ";
@@ -14,4 +15,4 @@ TEST(string_util, trim)
     EXPECT_STREQ("空格校验", src2.c_str());
     EXPECT_STREQ("空格校验 ", src2.c_str());
 }
-#endif
+

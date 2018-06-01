@@ -30,7 +30,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/zhoubaochuan/Workspace/Cplus/cplus/work/lib/ext/googletest/cmake_install.cmake")
-  include("/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/cmake_install.cmake")
 
 endif()
 

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named work_test
+
+# Build rule for target.
+work_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 work_test
+.PHONY : work_test
+
+# fast build rule for target.
+work_test/fast:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/build
+.PHONY : work_test/fast
+
+#=============================================================================
 # Target rules for targets named work
 
 # Build rule for target.
@@ -162,19 +175,6 @@ gtest/fast:
 	$(MAKE) -f lib/ext/googletest/CMakeFiles/gtest.dir/build.make lib/ext/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-#=============================================================================
-# Target rules for targets named work_test
-
-# Build rule for target.
-work_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 work_test
-.PHONY : work_test
-
-# fast build rule for target.
-work_test/fast:
-	$(MAKE) -f src/test/CMakeFiles/work_test.dir/build.make src/test/CMakeFiles/work_test.dir/build
-.PHONY : work_test/fast
-
 src/main/main.o: src/main/main.cpp.o
 
 .PHONY : src/main/main.o
@@ -202,32 +202,32 @@ src/main/main.cpp.s:
 	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/main.cpp.s
 .PHONY : src/main/main.cpp.s
 
-src/main/string_util.o: src/main/string_util.cpp.o
+src/test/main.o: src/test/main.cpp.o
 
-.PHONY : src/main/string_util.o
+.PHONY : src/test/main.o
 
 # target to build an object file
-src/main/string_util.cpp.o:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.o
-.PHONY : src/main/string_util.cpp.o
+src/test/main.cpp.o:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/test/main.cpp.o
+.PHONY : src/test/main.cpp.o
 
-src/main/string_util.i: src/main/string_util.cpp.i
+src/test/main.i: src/test/main.cpp.i
 
-.PHONY : src/main/string_util.i
+.PHONY : src/test/main.i
 
 # target to preprocess a source file
-src/main/string_util.cpp.i:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.i
-.PHONY : src/main/string_util.cpp.i
+src/test/main.cpp.i:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/test/main.cpp.i
+.PHONY : src/test/main.cpp.i
 
-src/main/string_util.s: src/main/string_util.cpp.s
+src/test/main.s: src/test/main.cpp.s
 
-.PHONY : src/main/string_util.s
+.PHONY : src/test/main.s
 
 # target to generate assembly for a file
-src/main/string_util.cpp.s:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/main/string_util.cpp.s
-.PHONY : src/main/string_util.cpp.s
+src/test/main.cpp.s:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/test/main.cpp.s
+.PHONY : src/test/main.cpp.s
 
 src/test/string_util.o: src/test/string_util.cpp.o
 
@@ -235,7 +235,7 @@ src/test/string_util.o: src/test/string_util.cpp.o
 
 # target to build an object file
 src/test/string_util.cpp.o:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/test/string_util.cpp.o
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/test/string_util.cpp.o
 .PHONY : src/test/string_util.cpp.o
 
 src/test/string_util.i: src/test/string_util.cpp.i
@@ -244,7 +244,7 @@ src/test/string_util.i: src/test/string_util.cpp.i
 
 # target to preprocess a source file
 src/test/string_util.cpp.i:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/test/string_util.cpp.i
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/test/string_util.cpp.i
 .PHONY : src/test/string_util.cpp.i
 
 src/test/string_util.s: src/test/string_util.cpp.s
@@ -253,8 +253,38 @@ src/test/string_util.s: src/test/string_util.cpp.s
 
 # target to generate assembly for a file
 src/test/string_util.cpp.s:
-	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/test/string_util.cpp.s
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/test/string_util.cpp.s
 .PHONY : src/test/string_util.cpp.s
+
+src/utility/string_util.o: src/utility/string_util.cpp.o
+
+.PHONY : src/utility/string_util.o
+
+# target to build an object file
+src/utility/string_util.cpp.o:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/utility/string_util.cpp.o
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/utility/string_util.cpp.o
+.PHONY : src/utility/string_util.cpp.o
+
+src/utility/string_util.i: src/utility/string_util.cpp.i
+
+.PHONY : src/utility/string_util.i
+
+# target to preprocess a source file
+src/utility/string_util.cpp.i:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/utility/string_util.cpp.i
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/utility/string_util.cpp.i
+.PHONY : src/utility/string_util.cpp.i
+
+src/utility/string_util.s: src/utility/string_util.cpp.s
+
+.PHONY : src/utility/string_util.s
+
+# target to generate assembly for a file
+src/utility/string_util.cpp.s:
+	$(MAKE) -f CMakeFiles/work_test.dir/build.make CMakeFiles/work_test.dir/src/utility/string_util.cpp.s
+	$(MAKE) -f CMakeFiles/work.dir/build.make CMakeFiles/work.dir/src/utility/string_util.cpp.s
+.PHONY : src/utility/string_util.cpp.s
 
 # Help Target
 help:
@@ -262,22 +292,25 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... work_test"
 	@echo "... work"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cmake-build-debug"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... work_test"
 	@echo "... src/main/main.o"
 	@echo "... src/main/main.i"
 	@echo "... src/main/main.s"
-	@echo "... src/main/string_util.o"
-	@echo "... src/main/string_util.i"
-	@echo "... src/main/string_util.s"
+	@echo "... src/test/main.o"
+	@echo "... src/test/main.i"
+	@echo "... src/test/main.s"
 	@echo "... src/test/string_util.o"
 	@echo "... src/test/string_util.i"
 	@echo "... src/test/string_util.s"
+	@echo "... src/utility/string_util.o"
+	@echo "... src/utility/string_util.i"
+	@echo "... src/utility/string_util.s"
 .PHONY : help
 
 

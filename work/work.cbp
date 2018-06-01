@@ -5,13 +5,61 @@
 		<Option title="work"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\ext\;CMake Files\lib\ext\googletest\;CMake Files\lib\ext\googletest\cmake\;CMake Files\src\;CMake Files\src\test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\ext\;CMake Files\lib\ext\googletest\;CMake Files\lib\ext\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="work_test">
+				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin/work_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/include"/>
+					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/lib/ext/googletest/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 work_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="work_test/fast">
+				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin/work_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/include"/>
+					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/lib/ext/googletest/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 work_test/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/Makefile&quot;  VERBOSE=1 clean"/>
@@ -191,54 +239,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/lib/ext/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="work_test">
-				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/libwork_test.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/../include"/>
-					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/../../lib/ext/googletest/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 work_test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="work_test/fast">
-				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/libwork_test.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/../include"/>
-					<Add directory="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/../../lib/ext/googletest/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 work_test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/lib/ext/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>
@@ -249,12 +249,15 @@
 		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/main.cpp">
 			<Option target="work"/>
 		</Unit>
-		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/main/string_util.cpp">
-			<Option target="work"/>
+		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/main.cpp">
+			<Option target="work_test"/>
 		</Unit>
 		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/string_util.cpp">
-			<Option target="work"/>
 			<Option target="work_test"/>
+		</Unit>
+		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/utility/string_util.cpp">
+			<Option target="work_test"/>
+			<Option target="work"/>
 		</Unit>
 		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -270,12 +273,6 @@
 		</Unit>
 		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/lib/ext/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\ext\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\src\test\"/>
-		</Unit>
-		<Unit filename="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/src/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\src\test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
