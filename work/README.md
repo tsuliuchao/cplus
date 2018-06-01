@@ -13,3 +13,9 @@ src     :   源代码 <br/>
  ## 单元测试
  目录位置： src/test/添加单元测试代码
  代码样例参考: src/test/string_util.cpp
+ 
+ 
+ ## 相关使用文档
+ 
+ googletest :   http://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
+ CMakeLists.txt 学习样例: https://github.com/yyzybb537/libgo/blob/master/CMakeLists.txt
