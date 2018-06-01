@@ -17,7 +17,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/include lib/ext/googletest/include
 link_directories(${PROJECT_SOURCE_DIR}/lib lib/ext/googletest)
 
 #编译器相关设置
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/output/bin")
 set(LIBRARIES pthread)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_COMPILER      "clang++" )         # 显示指定使用的C++编译器

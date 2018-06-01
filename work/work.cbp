@@ -18,8 +18,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="work_test">
-				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin/work_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin"/>
+				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin/work_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,8 +42,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="work_test/fast">
-				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin/work_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin"/>
+				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin/work_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -66,8 +66,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="work">
-				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin/work" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin"/>
+				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin/work" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -90,8 +90,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="work/fast">
-				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin/work" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/bin"/>
+				<Option output="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin/work" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhoubaochuan/Workspace/Cplus/cplus/work/output/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>

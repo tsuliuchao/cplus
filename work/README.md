@@ -1,5 +1,5 @@
 ## 目录结构
-
+output ： 输出目录，用于打包上线的文件夹<br/>
 data    :   存放数据 <br/>
 doc     :   存放文档 <br/>
 lib     :   库 <br/>
@@ -11,7 +11,7 @@ src     :   源代码 <br/>
  &ensp;|—test ： 单元测试代码<br/>
  
  ## 单元测试
- 目录位置： src/test/添加单元测试代码
+ 目录位置： src/test/添加单元测试代码<br/>
  代码样例参考: src/test/string_util.cpp
  
  
