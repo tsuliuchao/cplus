@@ -3,15 +3,14 @@
 //
 
 #include "common.h"
-#include "string_util.h"
 #include <gtest/gtest.h>
-
-using namespace work;
+using namespace boost::algorithm;
 
 TEST(string_util, trim)
 {
-    string src1 = " 空格校验 ";
-    string src2 = StringUtil::trim(src1);
-    EXPECT_STREQ("空格校验", src2.c_str());
+    string  str = " 空格校验 ";
+    cout << "befor trim str=" << str << endl;
+    trim(str);
+    cout << "after trim str=" << str << endl;
 }
 
