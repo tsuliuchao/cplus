@@ -15,6 +15,13 @@ src     :   源代码 <br/>
  目录位置： src/test/添加单元测试代码<br/>
  代码样例参考: src/test/string_util.cpp
  
+ ## 依赖库安装
+ 
+ ### boost安装
+ 下载地址:https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz
+ cd boost_1_67_0
+ ./bootstrap.sh
+ ./b2  install
  
  ## 相关使用文档
  
