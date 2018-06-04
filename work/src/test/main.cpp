@@ -2,10 +2,8 @@
 // Created by Zhou,Baochuan on 18/6/1.
 //
 
-#include "string_util.h"
+#include "common.h"
 #include <gtest/gtest.h>
-
-using namespace work;
 
 GTEST_API_ int main(int argc, char ** argv) {
     testing::InitGoogleTest(&argc, argv);

@@ -4,6 +4,8 @@
 
 #include "common.h"
 #include <gtest/gtest.h>
+#include <boost/algorithm/string.hpp>
+
 using namespace boost::algorithm;
 
 // 去空格

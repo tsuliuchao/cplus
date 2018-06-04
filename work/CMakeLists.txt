@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.11.2)
 
 project(work)
 
-message(STATUS "start running cmake...")
+message(STATUS "start load boost ========================================")
 # BOOST
 ## 设置个变量控制
 SET(BOOST_MIN_VERSION "1.67.0")
@@ -18,6 +18,7 @@ message(STATUS "Boost_VERSION: ${Boost_VERSION}")
 INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
 LINK_DIRECTORIES(${Boost_LIBRARY_DIRS})
 # .BOOST
+message(STATUS "end load boost ========================================")
 
 
 # 编译google test，会在当前目录生成libtest.a静态库
@@ -37,6 +38,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_COMPILER      "clang++" )         # 显示指定使用的C++编译器
 set(CMAKE_CXX_FLAGS   "-g")                     # 调试信息
 set(CMAKE_CXX_FLAGS   "-Wall")                  # 开启所有警告
+set(CMAKE_CXX_FLAGS   "-lboost_date_time-mt-d")
 
 #源码目录
 FILE(GLOB_RECURSE SOURCEFILES ${PROJECT_SOURCE_DIR}/src/utility/*.cpp)
