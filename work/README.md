@@ -18,10 +18,10 @@ src     :   源代码 <br/>
  ## 依赖库安装
  
  ### boost安装
- 下载地址:https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz
- cd boost_1_67_0
- ./bootstrap.sh
- ./b2  install
+ 下载地址:https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz<br/>
+ cd boost_1_67_0<br/>
+ ./bootstrap.sh<br/>
+ ./b2  install<br/>
  
  ## 相关使用文档
  
