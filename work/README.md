@@ -16,7 +16,6 @@ src     :   源代码 <br/>
  代码样例参考: src/test/string_util.cpp
  
  ## 依赖库安装
- 
  ### boost安装
  下载地址:https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz<br/>
  cd boost_1_67_0<br/>
@@ -26,4 +25,5 @@ src     :   源代码 <br/>
  ## 相关使用文档
  
  googletest :   http://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html <br/>
- CMakeLists.txt 学习样例: https://github.com/yyzybb537/libgo/blob/master/CMakeLists.txt
+ CMakeLists.txt 学习样例: https://github.com/yyzybb537/libgo/blob/master/CMakeLists.txt<br/>
+ 百度rpc(内部使用的)：https://github.com/brpc/brpc
