@@ -12,8 +12,7 @@ using namespace boost::algorithm;
 TEST(string_util, trim)
 {
     string  str = " 空格校验 ";
-    cout << "befor trim str=" << str << endl;
     trim(str);
-    cout << "after trim str=" << str << endl;
+    EXPECT_STREQ("空格校验", str.c_str());
 }
 
