@@ -1,11 +1,12 @@
 #include "common.h"
-#include "string_util.h"
+#include <boost/algorithm/string.hpp>
 
 
-using namespace work;
+using namespace boost;
 int main(int argc, char** argv) {
     string src = " OK";
-    cout << StringUtil::trim(src) << endl;
+    algorithm::trim(src);
+    cout << src << endl;
     return 0;
 }
 

@@ -5,6 +5,8 @@
 #define WORK_COMMON_H
 #include <iostream>
 #include <string>
+#include <map>
+#include <vector>
 #include <boost/version.hpp>
 
 using namespace std;
