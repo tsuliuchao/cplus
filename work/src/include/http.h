@@ -6,15 +6,14 @@
 #define WORK_HTTP_H
 
 #include "common.h"
+#include <curl/curl.h>
 
 namespace work {
     class Http {
-    private:
-        string _url;
     public:
-        Http(string url);
+        Http();
         ~Http();
-        static string get(map<string, string> params);
+        static string get(string url, unsigned retries = 3);
     };
 }
 
