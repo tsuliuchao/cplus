@@ -37,6 +37,9 @@ TEST(relation, regular_extract_wrap)
 
     Relation relation;
     while(getline(in, line, '\n')){
+        if (line.empty()){
+            continue;
+        }
         //vector<RelationMap> vecRelation = relation.regular_extract(line);
         vector<RelationMap> vecRelation = relation.regular_extract_wrap(line);
         break;
