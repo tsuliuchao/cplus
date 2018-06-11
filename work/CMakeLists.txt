@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.11.2)
 
 project(work)
 
+message(STATUS "CMAKE_CXX_COMPILER_ID=${CMAKE_CXX_COMPILER_ID}")
+
 message(STATUS "start load boost ========================================")
 message(STATUS "comake_command=${CMAKE_SOURCE_DIR}")
 # BOOST
@@ -40,8 +42,16 @@ set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER      "g++" )         # 显示指定使用的C++编译器
 set(CMAKE_CXX_FLAGS   "-g")                     # 调试信息
 set(CMAKE_CXX_FLAGS   "-Wall")                  # 开启所有警告
-set(CMAKE_CXX_FLAGS   "-lboost_date_time-mt-d") # boost
-set(CMAKE_CXX_FLAGS   "-lboost_regex-mt-sd") # boost
+
+if (UNIX AND NOT APPLE)
+    message(STATUS "ENTRY LINUX")
+    set(CMAKE_CXX_FLAGS   "-lboost_date_time") # boost
+    set(CMAKE_CXX_FLAGS   "-lboost_regex") # boost
+elseif(UNIX AND APPLE)
+    message(STATUS "ENTRY MAC")
+    set(CMAKE_CXX_FLAGS   "-lboost_date_time-mt-d") # boost
+    set(CMAKE_CXX_FLAGS   "-lboost_regex-mt-sd") # boost
+endif()
 
 #源码目录
 FILE(GLOB_RECURSE SOURCEFILES ${PROJECT_SOURCE_DIR}/src/include/*.cpp)
@@ -56,5 +66,5 @@ target_link_libraries(work_test gtest ${Boost_LIBRARIES} curl)
 
 
 execute_process(
-        COMMAND bash -c "cp -R ${CMAKE_CURRENT_SOURCE_DIR}/data ${CMAKE_CURRENT_SOURCE_DIR}/output/bin/"
+     COMMAND bash -c "cp -R ${CMAKE_CURRENT_SOURCE_DIR}/data ${CMAKE_CURRENT_SOURCE_DIR}/output/bin/"
 )
