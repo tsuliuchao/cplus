@@ -39,7 +39,7 @@ string Http::get(string url, unsigned int retries)
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void*) &response);
         //curl_easy_setopt(curl, CURLOPT_VERBOSE, 1);
         curl_easy_setopt(curl, CURLOPT_TIMEOUT, 0); // 传输超时
-        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 0); // 连接超时
+        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 2); // 连接超时
         curl_easy_setopt(curl, CURLOPT_NOSIGNAL, 1L);
         curl_easy_setopt(curl, CURLOPT_FORBID_REUSE, 1);
         CURLcode res = curl_easy_perform(curl);   // 执行

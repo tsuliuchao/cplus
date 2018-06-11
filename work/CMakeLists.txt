@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.11.2)
 project(work)
 
 message(STATUS "start load boost ========================================")
+message(STATUS "comake_command=${CMAKE_SOURCE_DIR}")
 # BOOST
 ## 设置个变量控制
 SET(BOOST_MIN_VERSION "1.67.0")
@@ -19,7 +20,6 @@ INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
 LINK_DIRECTORIES(${Boost_LIBRARY_DIRS})
 # .BOOST
 message(STATUS "end load boost ========================================")
-
 
 # 编译google test，会在当前目录生成libtest.a静态库
 add_subdirectory(lib/ext/googletest)
@@ -39,9 +39,10 @@ set(CMAKE_CXX_COMPILER      "clang++" )         # 显示指定使用的C++编译
 set(CMAKE_CXX_FLAGS   "-g")                     # 调试信息
 set(CMAKE_CXX_FLAGS   "-Wall")                  # 开启所有警告
 set(CMAKE_CXX_FLAGS   "-lboost_date_time-mt-d") # boost
+set(CMAKE_CXX_FLAGS   "-lboost_regex-mt-sd") # boost
 
 #源码目录
-FILE(GLOB_RECURSE SOURCEFILES ${PROJECT_SOURCE_DIR}/src/utility/*.cpp)
+FILE(GLOB_RECURSE SOURCEFILES ${PROJECT_SOURCE_DIR}/src/include/*.cpp)
 FILE(GLOB_RECURSE TEST_SOURCEFILES ${PROJECT_SOURCE_DIR}/src/test/*.cpp)
 
 add_custom_target(cmake-build-debug)
@@ -52,3 +53,6 @@ target_link_libraries(${PROJECT_NAME} gtest ${Boost_LIBRARIES} curl)
 target_link_libraries(work_test gtest ${Boost_LIBRARIES} curl)
 
 
+execute_process(
+        COMMAND bash -c "cp -R ${CMAKE_CURRENT_SOURCE_DIR}/data ${CMAKE_CURRENT_SOURCE_DIR}/output/bin/"
+)
