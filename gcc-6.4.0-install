@@ -1,0 +1,33 @@
+wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
+tar xvf gmp-6.1.2.tar.xz 
+cd gmp-6.1.2
+./configure --prefix=/usr/local/gmp
+make && make install
+
+http://ftp.twaren.net/Unix/GNU/gnu/mpfr/mpfr-3.1.6.tar.gz
+tar xvf mpfr-3.1.6.tar.gz 
+cd mpfr-3.1.6
+./configure --prefix=/usr/local/mpfr --with-gmp=/usr/local/gmp
+make && make install
+
+wget ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz
+tar xvf mpc-1.0.3.tar.gz 
+cd mpc-1.0.3
+./configure --prefix=/usr/local/mpc --with-gmp=/usr/local/gmp -with-mpfr=/usr/local/mpfr
+make && make install
+
+vi /etc/ld.so.conf
+#增加以下三行
+/usr/local/gmp/lib
+/usr/local/mpfr/lib
+/usr/local/mpc/lib
+#
+ldconfig -v
+
+wget ftp://ftp.gnu.org/gnu/gcc/gcc-6.4.0/gcc-6.4.0.tar.gz
+tar xvf gcc-6.4.0.tar.gz
+./configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/local/gmp --with-mpfr=/usr/local/mpfr --with-mpc=/usr/local/mpc
+make -j2 # 这个过程比较慢, 大概要半个多小时
+make install
+# 改名 /usr/bin 下的 cpp, c++, gcc, g++, gcov 这些文件, 再执行 gcc --version 就能看到新的版本信息了
+在将 /usr/bin/gcc 更名后, link到这个文件的 /usr/bin/cc 就失效了, 需要删除, 并在 /usr/local/bin/ 下新建一个到gcc的cc软链
