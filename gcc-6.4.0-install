@@ -1,21 +1,30 @@
+1.依赖库之一gmp
+简介：
+en:GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers. There is no practical limit to the precision except the ones implied by the available memory in the machine GMP runs on. GMP has a rich set of functions, and the functions have a regular interface.
+人语：GMP是一个用于任意精度算术的自由库，它在有符号整数、有理数和浮点数上进行运算。除了机器GMP上可用内存所暗示的精度外，对精度没有实际限制。GMP具有丰富的功能集，功能具有规则的接口。
+安装：
 wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
 tar xvf gmp-6.1.2.tar.xz 
 cd gmp-6.1.2
 ./configure --prefix=/usr/local/gmp
 make && make install
-
+2.依赖库之二mpfr
+简介：
+en:The MPFR library is a C library for multiple-precision floating-point computations with correct rounding. MPFR has continuously been supported by the INRIA and the current main authors come from the Caramba and AriC project-teams at Loria (Nancy, France) and LIP (Lyon, France) respectively; see more on the credit page. MPFR is based on the GMP multiple-precision library.
+人语：MPFR库是一个具有精确舍入的多精度浮点计算的C库。MPRFR一直得到了iRIA的支持，目前的主要作者来自CARAMBA和AriC项目团队分别在罗丽亚（南茜，法国）和LIP（里昂，法国）；在信用页上看到更多。MPFR是基于GMP的多精度库。
+安装：
 http://ftp.twaren.net/Unix/GNU/gnu/mpfr/mpfr-3.1.6.tar.gz
 tar xvf mpfr-3.1.6.tar.gz 
 cd mpfr-3.1.6
 ./configure --prefix=/usr/local/mpfr --with-gmp=/usr/local/gmp
 make && make install
-
+3.依赖库之三mpc
+简介：mpc是一个复杂数字算法的c语言库，支持任意精度和数字。它是对IEEE-754固定精度实浮点数计算标准的扩展，对每种计算操作提供了良好语义接口，同时保持较高的计算速度。
 wget ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz
 tar xvf mpc-1.0.3.tar.gz 
 cd mpc-1.0.3
 ./configure --prefix=/usr/local/mpc --with-gmp=/usr/local/gmp -with-mpfr=/usr/local/mpfr
 make && make install
-
 vi /etc/ld.so.conf
 #增加以下三行
 /usr/local/gmp/lib
