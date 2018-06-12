@@ -4,7 +4,7 @@ en:GMP is a free library for arbitrary precision arithmetic, operating on signed
 人语：GMP是一个用于任意精度算术的自由库，它在有符号整数、有理数和浮点数上进行运算。除了机器GMP上可用内存所暗示的精度外，对精度没有实际限制。GMP具有丰富的功能集，功能具有规则的接口。
 安装：
 wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
-tar xvf gmp-6.1.2.tar.xz 
+tar xvf gmp-6.1.2.tar.xz
 cd gmp-6.1.2
 ./configure --prefix=/usr/local/gmp
 make && make install
@@ -14,14 +14,14 @@ en:The MPFR library is a C library for multiple-precision floating-point computa
 人语：MPFR库是一个具有精确舍入的多精度浮点计算的C库。MPRFR一直得到了iRIA的支持，目前的主要作者来自CARAMBA和AriC项目团队分别在罗丽亚（南茜，法国）和LIP（里昂，法国）；在信用页上看到更多。MPFR是基于GMP的多精度库。
 安装：
 http://ftp.twaren.net/Unix/GNU/gnu/mpfr/mpfr-3.1.6.tar.gz
-tar xvf mpfr-3.1.6.tar.gz 
+tar xvf mpfr-3.1.6.tar.gz
 cd mpfr-3.1.6
 ./configure --prefix=/usr/local/mpfr --with-gmp=/usr/local/gmp
 make && make install
 3.依赖库之三mpc
 简介：mpc是一个复杂数字算法的c语言库，支持任意精度和数字。它是对IEEE-754固定精度实浮点数计算标准的扩展，对每种计算操作提供了良好语义接口，同时保持较高的计算速度。
 wget ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz
-tar xvf mpc-1.0.3.tar.gz 
+tar xvf mpc-1.0.3.tar.gz
 cd mpc-1.0.3
 ./configure --prefix=/usr/local/mpc --with-gmp=/usr/local/gmp -with-mpfr=/usr/local/mpfr
 make && make install
@@ -35,8 +35,12 @@ ldconfig -v
 
 wget ftp://ftp.gnu.org/gnu/gcc/gcc-6.4.0/gcc-6.4.0.tar.gz
 tar xvf gcc-6.4.0.tar.gz
-./configure --enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/local/gmp --with-mpfr=/usr/local/mpfr --with-mpc=/usr/local/mpc
+./configure --prefix=/usr/local/gcc-6.4.0--enable-checking=release --enable-languages=c,c++ --disable-multilib --with-gmp=/usr/local/gmp --with-mpfr=/usr/local/mpfr --with-mpc=/usr/local/mpc
 make -j2 # 这个过程比较慢, 大概要半个多小时
 make install
-# 改名 /usr/bin 下的 cpp, c++, gcc, g++, gcov 这些文件, 再执行 gcc --version 就能看到新的版本信息了
-在将 /usr/bin/gcc 更名后, link到这个文件的 /usr/bin/cc 就失效了, 需要删除, 并在 /usr/local/bin/ 下新建一个到gcc的cc软链
+# 改名 /usr/bin 下的 cpp, c++, gcc, g++, gcov 这些文件
+[root@VM-10-115-1-18 bin]# ln -s /usr/local/gcc-6.4.0/bin/c++ /usr/bin/c++
+[root@VM-10-115-1-18 bin]# ln -s /usr/local/gcc-6.4.0/bin/cpp /usr/bin/cpp
+[root@VM-10-115-1-18 bin]# ln -s /usr/local/gcc-6.4.0/bin/gcc /usr/bin/gcc
+[root@VM-10-115-1-18 bin]# ln -s /usr/local/gcc-6.4.0/bin/gcov /usr/bin/gcov
+[root@VM-10-115-1-18 bin]# ln -s /usr/local/gcc-6.4.0/bin/g++ /usr/bin/g++
